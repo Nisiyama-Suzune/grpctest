@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+service OrderService {
+	rpc add_order (Order) returns (Status) {}
+	rpc remove_order (Order) returns (Status) {}
+}
+
+message Order {
+	string key = 1;
+	string platform = 2;
+	string symbol = 3;
+	double price = 4;
+	double amount = 5;
+}
+
+message Status {
+	string data = 1;
+}
+
