@@ -11,15 +11,15 @@ async function run () {
 		key : 'DLFDLF',
 		platform : 'DLFDLF',
 		symbol : 'dlf-dlf',
-		price : 10.00,
-		amount : 5.00
+		price : 10.000002,
+		amount : 5.000004,
 	}));
 	console.log (await grpc_service.call_function (stub, 'remove_order', {
 		key : 'DLFDLF',
 		platform : 'DLFDLF',
 		symbol : 'dlf-dlf',
-		price : 10.00,
-		amount : 5.00
+		price : 10.000000002,
+		amount : 5.0000000004
 	}));
 
 }
